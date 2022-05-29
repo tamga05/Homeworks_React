@@ -18,7 +18,7 @@
     width: 30px;
     height: 90px;
     background-color: white;
-    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
 }
 
 .messageBlockWrapper {
@@ -31,7 +31,7 @@
     background-color: #edcff5;
     display: flex;
     align-items: center;
-    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     overflow: hidden;
 }
 
@@ -84,7 +84,7 @@
 
 .messageContent:hover {
     cursor: pointer;
-    transform: rotateX(-90deg);
+    transform: rotateX(-45deg);
     opacity: 0;
     transition: 0.7s;
 }
