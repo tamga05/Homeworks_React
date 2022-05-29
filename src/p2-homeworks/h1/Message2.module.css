@@ -1,0 +1,125 @@
+.message2 {
+    width: 420px;
+    height: 90px;
+    margin: 40px 0 40px 100px;
+    background-color: #edcff5;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+}
+
+.messageLeftBlock {
+    width: 30px;
+    height: 90px;
+    background-color: #edcff5;
+}
+
+.messageLeftBlockInner {
+    width: 30px;
+    height: 90px;
+    background-color: white;
+    border-bottom-right-radius: 30px;
+}
+
+.messageBlockWrapper {
+    background-color: white;
+}
+
+.messageBlock {
+    width: 380px;
+    height: 90px;
+    background-color: #edcff5;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 10px;
+    overflow: hidden;
+}
+
+.wrapperMessageImage {
+    width: 80px;
+    height: 80px;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+    background-color: #b3f5f4;
+    transition: 5s ease;
+}
+
+.wrapperMessageImage:hover {
+    cursor: pointer;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.innerMessageImage {
+    width: 80px;
+    height: 80px;
+    background-color: #edcff5;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.messageImage {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    align-self: end;
+    object-fit: cover;
+}
+
+.messageContent {
+    width: 310px;
+    height: 80px;
+    /*border-top-left-radius: 30px;*/
+    /*border-top-right-radius: 30px;*/
+    /*border-bottom-left-radius: 30px;*/
+    /*border-bottom-right-radius: 30px;*/
+    border-radius: 30px;
+    background-color: #b3f5f4;
+    transition: 3s ease;
+}
+
+.messageContent:hover {
+    cursor: pointer;
+    transform: rotateX(-90deg);
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.bloggerName {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #958ebb;
+    margin-top: 6px;
+    margin-left: 15px;
+}
+
+.messageAndTime {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+}
+
+.message {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    color: #d377ea;
+    margin-bottom: 8px;
+}
+
+.time {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    color: #4ebad4;
+    margin-right: 25px;
+    align-self: end;
+}

@@ -1,5 +1,6 @@
 import React from 'react'
 import Message from "./Message";
+import Message2 from "./Message2";
 
 
 const messageData1 = {
@@ -11,9 +12,9 @@ const messageData1 = {
 
 const messageData2 = {
     avatar: 'https://i.pinimg.com/originals/62/f2/03/62f203bea44b49f7b744e956b07f0a6e.jpg',
-    name: 'Angelina',
-    message: 'Увидимся...???',
-    time: '22:15',
+    name: 'Angelina Jolie Voight',
+    message: 'You\'re handsome...',
+    time: '07:00',
 }
 
 
@@ -32,11 +33,10 @@ function HW1() {
                 time={messageData1.time}
             />
 
-
             <hr/>
             {/*для личного творчества, могу проверить*/}
 
-            <Message
+            <Message2
                 avatar={messageData2.avatar}
                 name={messageData2.name}
                 message={messageData2.message}
