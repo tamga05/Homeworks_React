@@ -2,59 +2,80 @@
     width: 400px;
     height: 90px;
     margin: 40px 100px 50px;
-    padding: 5px 10px 5px 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #A4E800;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
+.wrapperMessageImage {
+    width: 80px;
+    height: 80px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #243803;
+}
+
+.innerMessageImage {
+    width: 80px;
+    height: 80px;
+    background-color: #A4E800;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
 .messageImage {
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     align-self: end;
     object-fit: cover;
 }
 
 .messageContent {
-    width: 290px;
+    width: 310px;
     height: 80px;
-    padding: 5px 10px 5px 20px;
-    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
     background-color: #243803;
 }
 
 .bloggerName {
-    color: #958ebb;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
+    color: #958ebb;
     margin-top: 6px;
+    margin-left: 15px;
 }
 
 .messageAndTime {
     display: flex;
     justify-content: space-between;
+    margin-left: 15px;
 }
 
 .message {
-    color: #c7d5c6;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 40px;
+    color: #c7d5c6;
     margin-bottom: 8px;
 }
 
 .time {
-    color: #407940;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 40px;
-    margin-right: 10px;
+    color: #407940;
+    margin-right: 15px;
     align-self: end;
 }

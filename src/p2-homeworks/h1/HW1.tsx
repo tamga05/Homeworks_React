@@ -1,12 +1,21 @@
 import React from 'react'
 import Message from "./Message";
 
-const messageData = {
+
+const messageData1 = {
     avatar: 'https://sun9-74.userapi.com/Ph-WiuOtF985il9AvN9JqiCWedmHtSGSSTXrSA/ltEB2Z2-YO4.jpg',
-    name: 'Some Name',
-    message: 'some text',
-    time: '22:00',
+    name: 'Artem',
+    message: 'npm start нажимал?',
+    time: '22:00'
 }
+
+const messageData2 = {
+    avatar: 'https://i.pinimg.com/originals/62/f2/03/62f203bea44b49f7b744e956b07f0a6e.jpg',
+    name: 'Angelina',
+    message: 'Увидимся...???',
+    time: '22:15',
+}
+
 
 function HW1() {
     return (
@@ -17,14 +26,23 @@ function HW1() {
             {/*should work (должно работать)*/}
 
             <Message
-                avatar={messageData.avatar}
-                name={messageData.name}
-                message={messageData.message}
-                time={messageData.time}
+                avatar={messageData1.avatar}
+                name={messageData1.name}
+                message={messageData1.message}
+                time={messageData1.time}
             />
+
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
+
+            <Message
+                avatar={messageData2.avatar}
+                name={messageData2.name}
+                message={messageData2.message}
+                time={messageData2.time}
+            />
+
             {/*<AlternativeMessage/>*/}
             <hr/>
         </div>
