@@ -79,14 +79,29 @@
     /*border-bottom-right-radius: 30px;*/
     border-radius: 30px;
     background-color: #b3f5f4;
-    transition: 3s ease;
+    transition: 1.5s ease;
+}
+
+.messageContent:hover .time {
+    color: #d377ea;;
+    transition: 0.1s;
+}
+
+.messageContent:hover .bloggerName {
+    color: #d377ea;
+    transition: 0.1s;
+}
+
+.messageContent:hover .message {
+    color: #d377ea;
+    transition: 0.1s;
 }
 
 .messageContent:hover {
     cursor: pointer;
     transform: rotateX(-45deg);
     opacity: 0;
-    transition: 0.7s;
+    transition: 1.5s;
 }
 
 .bloggerName {

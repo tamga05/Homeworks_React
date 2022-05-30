@@ -12,7 +12,7 @@ const messageData1 = {
 
 const messageData2 = {
     avatar: 'https://i.pinimg.com/originals/62/f2/03/62f203bea44b49f7b744e956b07f0a6e.jpg',
-    name: 'Angelina Jolie Voight',
+    name: 'Angelina',
     message: 'You\'re handsome...',
     time: '07:00',
 }
