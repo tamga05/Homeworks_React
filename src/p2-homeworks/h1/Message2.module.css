@@ -79,7 +79,7 @@
     /*border-bottom-right-radius: 30px;*/
     border-radius: 30px;
     background-color: #b3f5f4;
-    transition: 1.5s ease;
+    transition: 3s ease;
 }
 
 .messageContent:hover .time {
@@ -99,7 +99,7 @@
 
 .messageContent:hover {
     cursor: pointer;
-    transform: rotateX(-45deg);
+    transform: rotateX(-90deg);
     opacity: 0;
     transition: 1.5s;
 }
@@ -121,12 +121,16 @@
 }
 
 .message {
+    width: 195px;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 40px;
     color: #d377ea;
     margin-bottom: 8px;
+    /*word-wrap: break-word;*/
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .time {

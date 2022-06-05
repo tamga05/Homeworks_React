@@ -1,6 +1,6 @@
-import React from 'react'
-import Message from "./Message";
-import Message2 from "./Message2";
+import React from 'react';
+import Message from './Message';
+import Message2 from './Message2';
 
 
 const messageData1 = {
@@ -8,14 +8,14 @@ const messageData1 = {
     name: 'Artem',
     message: 'npm start нажимал?',
     time: '22:00'
-}
+};
 
 const messageData2 = {
     avatar: 'https://i.pinimg.com/originals/62/f2/03/62f203bea44b49f7b744e956b07f0a6e.jpg',
     name: 'Angelina',
     message: 'You\'re handsome...',
     time: '07:00',
-}
+};
 
 
 function HW1() {
@@ -35,6 +35,7 @@ function HW1() {
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
+            AlternativeMessage
 
             <Message2
                 avatar={messageData2.avatar}
@@ -46,7 +47,7 @@ function HW1() {
             {/*<AlternativeMessage/>*/}
             <hr/>
         </div>
-    )
+    );
 }
 
-export default HW1
+export default HW1;
