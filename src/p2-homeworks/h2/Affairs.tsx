@@ -1,6 +1,7 @@
 import React from 'react';
 import Affair from './Affair';
 import {AffairType, FilterType} from './HW2';
+import s from './Affairs.module.css';
 
 
 type AffairsPropsType = { // need to fix any
@@ -35,14 +36,18 @@ function Affairs(props: AffairsPropsType) {
 
 
     return (
-        <div>
+        <div className={s.wrapperAffairsButton}>
 
-            {mappedAffairs}
+            <div className={s.mappedAffairs}>
+                {mappedAffairs}
+            </div>
 
-            <button onClick={setAll}>All</button>
-            <button onClick={setHigh}>High</button>
-            <button onClick={setMiddle}>Middle</button>
-            <button onClick={setLow}>Low</button>
+            <div className={s.blockFilterButton}>
+                <button className={s.filterButtonAll} onClick={setAll}>All</button>
+                <button className={s.filterButtonHigh} onClick={setHigh}>High</button>
+                <button className={s.filterButtonMiddle} onClick={setMiddle}>Middle</button>
+                <button className={s.filterButtonLow} onClick={setLow}>Low</button>
+            </div>
         </div>
     );
 }

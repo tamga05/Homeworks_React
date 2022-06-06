@@ -55,11 +55,12 @@ function HW2() {
             <div>homeworks 2</div>
             <br/>
             {/*should work (должно работать)*/}
-            <Affairs
-                data={filteredAffairs}
-                setFilter={setFilter}
-                deleteAffairCallback={deleteAffairCallback}
-            />
+            <div>
+                <Affairs data={filteredAffairs}
+                         setFilter={setFilter}
+                         deleteAffairCallback={deleteAffairCallback}
+                />
+            </div>
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
