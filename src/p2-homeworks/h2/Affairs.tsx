@@ -28,10 +28,10 @@ function Affairs(props: AffairsPropsType) {
         props.setFilter('high');
     };
     const setMiddle = () => {
-        props.setFilter('low');
+        props.setFilter('middle');
     };
     const setLow = () => {
-        props.setFilter('middle');
+        props.setFilter('low');
     };
 
 

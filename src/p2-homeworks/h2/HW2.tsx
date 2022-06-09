@@ -3,13 +3,13 @@ import Affairs from './Affairs';
 
 
 // types
-export type AffairPriorityType = 'high' | 'low' | 'middle' | 'all' // need to fix any
+export type AffairPriorityType = 'high' | 'low' | 'middle' // need to fix any
 export type AffairType = {
     _id: number
     name: string
     priority: AffairPriorityType
 } // need to fix any
-export type FilterType = AffairPriorityType
+export type FilterType = 'all' | AffairPriorityType
 
 
 // constants
@@ -23,7 +23,7 @@ let defaultAffairs: Array<AffairType> = [ // need to fix any
 
 
 // pure helper functions
-export const filterAffairs = (affairs: Array<AffairType>, filter: AffairPriorityType): Array<AffairType> => { // need to fix any
+export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): Array<AffairType> => { // need to fix any
     if (filter === 'high') {
         return affairs.filter(affairs => affairs.priority === 'high');
     } else if (filter === 'low') {
