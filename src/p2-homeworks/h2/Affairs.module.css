@@ -35,6 +35,13 @@
     background-color: hsl(270deg, 50%, 75%);
 }
 
+.filterButtonAll:focus,
+.filterButtonHigh:focus,
+.filterButtonMiddle:focus,
+.filterButtonLow:focus {
+    outline: 3px solid red;
+}
+
 .filterButtonHigh {
     width: 70px;
     height: 30px;
