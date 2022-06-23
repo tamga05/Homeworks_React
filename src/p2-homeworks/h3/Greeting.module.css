@@ -15,6 +15,7 @@
     padding: 5px 20px;
     font-size: 25px;
     color: #A4E800;
+    background-color: #f6fef2;
 }
 
 .errorInputClass {
@@ -39,6 +40,14 @@
     /*color: #aaaaaa;*/
 }
 
+.button:hover {
+    background-color: #A4E800;
+    color: white;
+    border-color: #aaaaaa;
+    height: 40px;
+    border-radius: 50%;
+}
+
 .errorButton {
     width: 40px;
     height: 25px;
@@ -49,15 +58,15 @@
     background-color: #f9eded;
 }
 
-.button:hover {
-    background-color: #A4E800;
-    color: white;
-    border-color: #aaaaaa;
+.errorButton:hover {
+    height: 40px;
+    border-radius: 50%;
 }
 
 .totalUsers {
     margin-left: 20px;
     font-size: 35px;
+    font-weight: 600;
     color: #A4E800;
     margin-bottom: 3px;
 }
@@ -65,6 +74,7 @@
 .errorTotalUsers {
     margin-left: 20px;
     font-size: 35px;
+    font-weight: 700;
     /*margin-left: 20px;*/
     /*font-size: 30px;*/
     color: red;
