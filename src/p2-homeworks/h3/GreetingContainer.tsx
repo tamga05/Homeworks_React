@@ -25,6 +25,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
         const userName = event.currentTarget.value.trim();
         if (userName) {
             setName(userName);
+            setError('');
         } else {
             setName('');
             setError('Enter your name !!!');
