@@ -1,7 +1,89 @@
-.someClass {
-
+.wrapperInput {
+    padding-top: 15px;
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
 }
 
-.error {
-    border: 1px solid red;
+.inputInputClass {
+    width: 250px;
+    height: 35px;
+    outline: none;
+    border: 2px solid #A4E800;
+    border-radius: 10px;
+    margin: 0 20px 0 100px;
+    padding: 5px 20px;
+    font-size: 25px;
+    color: #A4E800;
 }
+
+.errorInputClass {
+    width: 250px;
+    height: 35px;
+    outline: none;
+    border: 2px solid red;
+    border-radius: 10px;
+    margin: 0 20px 0 100px;
+    padding: 5px 20px;
+    font-size: 25px;
+    color: red;
+    background-color: #f9eded;
+}
+
+.button {
+    width: 40px;
+    height: 25px;
+    border: 1px solid #A4E800;
+    border-radius: 5px;
+    cursor: pointer;
+    /*color: #aaaaaa;*/
+}
+
+.errorButton {
+    width: 40px;
+    height: 25px;
+    border: 2px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+    color: red;
+    background-color: #f9eded;
+}
+
+.button:hover {
+    background-color: #A4E800;
+    color: white;
+    border-color: #aaaaaa;
+}
+
+.totalUsers {
+    margin-left: 20px;
+    font-size: 35px;
+    color: #A4E800;
+    margin-bottom: 3px;
+}
+
+.errorTotalUsers {
+    margin-left: 20px;
+    font-size: 35px;
+    /*margin-left: 20px;*/
+    /*font-size: 30px;*/
+    color: red;
+    /*margin-bottom: 3px;*/
+    margin-bottom: 3px;
+}
+
+.wrapperErrorSpanClass {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.errorSpanClass {
+    color: red;
+    margin-left: 175px;
+    font-weight: 800;
+}
+
+/*.error {*/
+/*    outline: none;*/
+/*    border: 1px solid red;*/
+/*}*/
