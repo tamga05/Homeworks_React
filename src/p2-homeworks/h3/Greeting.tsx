@@ -53,7 +53,7 @@ const Greeting: React.FC<GreetingPropsType> = (
                 {/*<button onClick={addUser} disabled={!name} className={error ? errorButton : normalButton}>add</button>*/}
                 {/*<span className={error ? errorSpan : normalSpan}>{totalUsers}</span>*/}
 
-                <input value={name} onChange={setNameCallback} className={styleInput}/>
+                <input value={name} onChange={setNameCallback} title={'Enter at input your name and press add '} className={styleInput}/>
                 <button onClick={addUser} disabled={!name} title={'Enter at input your name and press add '} className={styleButton}>add</button>
                 <span className={styleSpan}>{totalUsers}</span>
             </div>
