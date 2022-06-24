@@ -1,11 +1,12 @@
-/*Affair*/
+/* Affair */
 
 .deleteButton {
     width: 70px;
     height: 30px;
     border: 1px solid;
     border-radius: 5px;
-    background-color: #ffa097;
+    /*background-color: #ffa097;*/
+    background-color: #A4E800;
     font-size: 18px;
     display: flex;
     justify-content: center;
@@ -25,14 +26,21 @@
     transition: 0.5s;
 }
 
-/*Affairs*/
+/* Affairs */
 
 .filterButtonAll {
     width: 70px;
     height: 30px;
     border: 1px solid;
     border-radius: 5px;
+    background-color: #A4E800;
+}
+
+.filterButtonAll:hover {
     background-color: hsl(270deg, 50%, 75%);
+    cursor: pointer;
+    color: white;
+    box-shadow: 0 0 5px 3px #000000;
 }
 
 .filterButtonAll:focus,
@@ -47,7 +55,14 @@
     height: 30px;
     border: 1px solid;
     border-radius: 5px;
-    background-color: #55f11b;
+    background-color: #A4E800;
+}
+
+.filterButtonHigh:hover {
+    background-color: red;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0 0 5px 3px #000000;
 }
 
 .filterButtonMiddle {
@@ -55,7 +70,14 @@
     height: 30px;
     border: 1px solid;
     border-radius: 5px;
+    background-color: #A4E800;
+}
+
+.filterButtonMiddle:hover {
     background-color: #e9dc2e;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0 0 5px 3px #000000;
 }
 
 .filterButtonLow {
@@ -63,18 +85,25 @@
     height: 30px;
     border: 1px solid;
     border-radius: 5px;
-    background-color: #a4f3fb;
+    background-color: #A4E800;
 }
 
-.filterButtonAll:hover,
-.filterButtonHigh:hover,
-.filterButtonMiddle:hover,
 .filterButtonLow:hover {
+    background-color: green;
     cursor: pointer;
-    background-color: red;
     color: white;
     box-shadow: 0 0 5px 3px #000000;
 }
+
+/*.filterButtonAll:hover,*/
+/*.filterButtonHigh:hover,*/
+/*.filterButtonMiddle:hover,*/
+/*.filterButtonLow:hover {*/
+/*    cursor: pointer;*/
+/*    background-color: red;*/
+/*    color: white;*/
+/*    box-shadow: 0 0 5px 3px #000000;*/
+/*}*/
 
 .wrapperAffairsButton {
     width: 300px;

@@ -8,7 +8,6 @@ type GreetingContainerPropsType = {
     addUserCallback: (name: string) => void; // need to fix any
 }
 
-
 // более простой и понятный для новичков
 // function GreetingContainer(props: GreetingPropsType) {
 
