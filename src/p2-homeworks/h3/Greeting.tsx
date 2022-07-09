@@ -1,4 +1,4 @@
-import React, {ChangeEvent} from 'react';
+import React, {ChangeEvent, KeyboardEvent} from 'react';
 import s from './Greeting.module.css';
 
 
@@ -8,12 +8,13 @@ type GreetingPropsType = {
     addUser: () => void// need to fix any
     error: string // need to fix any
     totalUsers: number // need to fix any
+    addEnterUser: (event: KeyboardEvent<HTMLInputElement>) => void
 }
 
 // презентационная компонента (для верстальщика)
 
 const Greeting: React.FC<GreetingPropsType> = (
-    {name, setNameCallback, addUser, error, totalUsers} // деструктуризация пропсов
+    {name, setNameCallback, addUser, error, totalUsers, addEnterUser} // деструктуризация пропсов
 ) => {
 
     // const inputClass = s.error; // need to fix with (?:)
@@ -33,6 +34,9 @@ const Greeting: React.FC<GreetingPropsType> = (
     const styleButton = error ? s.errorButton : s.button; // styleButton
     const styleSpan = error ? s.errorTotalUsers : s.totalUsers; // styleSpan
 
+    const enterTitle = 'Enter at input your name and press add';
+
+
     return (
         <div>
             <div className={s.wrapperInput}>
@@ -40,8 +44,9 @@ const Greeting: React.FC<GreetingPropsType> = (
                 {/*<button onClick={addUser} disabled={!name} className={error ? s.errorButton : s.button}>add</button>*/}
                 {/*<span className={error ? s.errorTotalUsers : s.totalUsers}>{totalUsers}</span>*/}
 
-                <input value={name} onChange={setNameCallback} title={'Enter at input your name and press add'} className={styleInput}/>
-                <button onClick={addUser} disabled={!name} title={'Enter at input your name and press add'} className={styleButton}>add</button>
+
+                <input value={name} onChange={setNameCallback} onKeyDown={addEnterUser} title={enterTitle} className={styleInput}/>
+                <button onClick={addUser} disabled={!name} title={enterTitle} className={styleButton}>add</button>
                 <span className={styleSpan}>{totalUsers}</span>
             </div>
             <div className={s.wrapperErrorSpanClass}>
