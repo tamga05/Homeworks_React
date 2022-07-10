@@ -9,7 +9,7 @@ function HW4() {
 
     const [text, setText] = useState<string>('')
 
-    const error = text ? '' : 'error'
+    const error = text ? '' : 'Input text and press Enter'
 
     const showAlert = () => {
         if (error) {
@@ -17,8 +17,8 @@ function HW4() {
         } else {
             alert(text) // если нет ошибки показать текст
         }
+        setText('')
     }
-
 
     const [checked, setChecked] = useState<boolean>(false)
 
@@ -33,10 +33,10 @@ function HW4() {
             <div className={s.column}>
 
                 <SuperInputText
+                    error={error} // ошибка Может передаваться или Не передаваться !!!
                     value={text}
                     onChangeText={setText}
                     onEnter={showAlert}
-                    error={error}
                     // spanClassName={s.testSpanError}
                 />
 

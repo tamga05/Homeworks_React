@@ -1,12 +1,58 @@
 .superInput {
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+}
 
+.wrapperInputMain {
+    height: 100px;
+    text-align: center;
+}
+
+.mainInput {
+    width: 250px;
+    height: 35px;
+    outline: none;
+    border: 2px solid #A4E800;
+    border-radius: 10px;
+    /*margin-top: 20px;*/
+    padding: 5px 20px;
+    font-size: 25px;
+    color: #A4E800;
+    background-color: #f6fef2;
+}
+
+.mainInput:focus {
+    border: 2px solid green;
+    color: green;
 }
 
 .errorInput {
-    border: 3px solid lime;
-    background: red;
+    /*border: 3px solid lime;*/
+    /*background: red;*/
+    border: 2px solid red;
+    background-color: #f9eded;
 }
+
+.errorInput:focus {
+    border: 2px solid red;
+    color: red;
+}
+
+
+/*.errorInput .mainInput:focus {*/
+/*    fo*/
+/*}*/
 
 .error {
     color: red;
+    /*margin-left: 170px;*/
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+.wrapperInputErrorSpan {
+    margin-top: 10px;
+    margin-bottom: 15px;
 }

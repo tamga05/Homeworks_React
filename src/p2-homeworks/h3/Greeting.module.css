@@ -17,6 +17,12 @@
     background-color: #f6fef2;
 }
 
+.inputInputClass:focus {
+    /*border: 2px solid #243803;*/
+    border: 2px solid #A4E800;
+    color: #A4E800;
+}
+
 .errorInputClass {
     width: 250px;
     height: 35px;
