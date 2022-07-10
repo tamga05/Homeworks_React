@@ -17,12 +17,12 @@ const SuperButton: React.FC<SuperButtonPropsType> = (
     }
 ) => {
 
-    const finalClassName = `${red ? s.red : s.default} ${className}`
+    const finalButtonClassName = `${red ? s.red : s.default} ${className}`
 
 
     return (
         <button
-            className={finalClassName}
+            className={finalButtonClassName}
             {...restProps} // отдаём кнопке остальные пропсы если они есть (children там внутри)
         />
     )

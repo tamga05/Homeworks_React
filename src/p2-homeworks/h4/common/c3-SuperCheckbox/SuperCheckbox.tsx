@@ -1,5 +1,6 @@
 import React, {ChangeEvent, DetailedHTMLProps, InputHTMLAttributes} from 'react'
 import s from './SuperCheckbox.module.css'
+import {v1} from 'uuid';
 
 
 // тип пропсов обычного инпута
@@ -23,18 +24,23 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
 ) => {
 
     const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
-        // сделайте так чтоб работал onChange и onChangeChecked
+        // сделайте так, чтобы работал onChange и onChangeChecked
+        console.log('The checkbox was toggled');
+        // onChangeChecked(e.currentTarget.checked)
+        onChange && onChange(e)
+        onChangeChecked && onChangeChecked(e.currentTarget.checked)
     }
 
-    const finalInputClassName = `${s.checkbox} ${className ? className : ''}`
+    const finalCheckboxClassName = `${s.checkbox} ${className ? className : ''}`
 
 
     return (
-        <label>
+        <label className={s.checkboxLabel}>
             <input
+                id={v1()}
                 type={'checkbox'}
                 onChange={onChangeCallback}
-                className={finalInputClassName}
+                className={finalCheckboxClassName}
 
                 {...restProps} // отдаём инпуту остальные пропсы если они есть (checked например там внутри)
             />

@@ -1,7 +1,43 @@
 .checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: #dffda9;
+    border: 1px solid green;
+    border-radius: 5px;
+}
 
+.checkbox:checked {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    /*background-color: #dffda9;*/
+    /*background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjVoYMl9xXh97tbu6yW0-WWnxm01V1Y5rxcA&usqp=CAU');*/
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ7R5YVjJjDg6dvpVdqdpmCcyghGvA12vC_y4V66926Jm0k4QWOYjdWMKbwZkspFtJrmA&usqp=CAU');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.checkbox:hover {
+    background-color: #A4E800;
+}
+
+.checkbox:focus {
+    background-color: white;
+    box-shadow: 0 0 5px 3px #A4E800;
 }
 
 .spanClassName {
+    height: 20px;
+    font-weight: 700;
+    color: green;
+    margin-left: 10px;
+    cursor: pointer;
+}
 
+.checkboxLabel {
+    display: flex;
 }
