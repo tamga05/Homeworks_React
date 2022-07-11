@@ -25,9 +25,18 @@
     background-color: #A4E800;
 }
 
-.checkbox:focus {
+/*.checkbox:focus {*/
+/*    background-color: white;*/
+/*    box-shadow: 0 0 5px 3px #A4E800;*/
+/*}*/
+
+.checkboxFocus {
     background-color: white;
     box-shadow: 0 0 5px 3px #A4E800;
+}
+
+.checkboxNoFocus {
+    box-shadow: none;
 }
 
 .spanClassName {
