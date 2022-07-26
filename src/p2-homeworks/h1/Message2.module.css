@@ -1,7 +1,7 @@
 .message2 {
     width: 420px;
     height: 90px;
-    margin: 40px 0 40px 100px;
+    margin: 40px auto 40px;
     background-color: #edcff5;
     border-radius: 10px;
     display: flex;
@@ -80,6 +80,7 @@
     border-radius: 30px;
     background-color: #b3f5f4;
     transition: 3s ease;
+    text-align: initial;
 }
 
 .messageContent:hover .time {

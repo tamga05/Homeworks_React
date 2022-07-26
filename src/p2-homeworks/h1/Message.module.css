@@ -1,7 +1,7 @@
 .messageBlock {
     width: 400px;
     height: 90px;
-    margin: 40px 100px 50px;
+    margin: 40px auto 50px;
     border-radius: 10px;
     background-color: #A4E800;
     display: flex;
@@ -43,6 +43,7 @@
     border-bottom-right-radius: 10px;
     border-top-left-radius: 10px;
     background-color: #243803;
+    text-align: initial;
 }
 
 .bloggerName {
@@ -79,3 +80,4 @@
     margin-right: 15px;
     align-self: end;
 }
+

@@ -38,19 +38,20 @@ const Greeting: React.FC<GreetingPropsType> = (
 
 
     return (
-        <div>
-            <div className={s.wrapperInput}>
-                {/*<input value={name} onChange={setNameCallback} className={error ? s.errorInputClass : s.inputInputClass}/>*/}
-                {/*<button onClick={addUser} disabled={!name} className={error ? s.errorButton : s.button}>add</button>*/}
-                {/*<span className={error ? s.errorTotalUsers : s.totalUsers}>{totalUsers}</span>*/}
+        <div className={s.wrapper}>
+            <div className={s.fullWrapper}>
+                <div className={s.wrapperInput}>
+                    {/*<input value={name} onChange={setNameCallback} className={error ? s.errorInputClass : s.inputInputClass}/>*/}
+                    {/*<button onClick={addUser} disabled={!name} className={error ? s.errorButton : s.button}>add</button>*/}
+                    {/*<span className={error ? s.errorTotalUsers : s.totalUsers}>{totalUsers}</span>*/}
 
-
-                <input value={name} onChange={setNameCallback} onKeyDown={addEnterUser} title={enterTitle} className={styleInput}/>
-                <button onClick={addUser} disabled={!name} title={enterTitle} className={styleButton}>add</button>
-                <span className={styleSpan}>{totalUsers}</span>
-            </div>
-            <div className={s.wrapperErrorSpanClass}>
-                <span className={s.errorSpanClass}>{error}</span>
+                    <input value={name} onChange={setNameCallback} onKeyDown={addEnterUser} title={enterTitle} className={styleInput}/>
+                    <button onClick={addUser} disabled={!name} title={enterTitle} className={styleButton}>add</button>
+                    <span className={styleSpan}>{totalUsers}</span>
+                </div>
+                <div className={s.wrapperErrorSpanClass}>
+                    <span className={s.errorSpanClass}>{error}</span>
+                </div>
             </div>
         </div>
     );

@@ -1,6 +1,7 @@
 import React from 'react';
 import Message from './Message';
 import Message2 from './Message2';
+import s from './Message.module.css'
 
 
 const messageData1 = {
