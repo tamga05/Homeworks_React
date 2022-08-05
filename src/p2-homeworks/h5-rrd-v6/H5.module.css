@@ -10,6 +10,12 @@ html, body {
 
 body {
     background: url("./../h5-rrd-v6/pages/404.png") center no-repeat #333039;
+    overflow: scroll;
+}
+
+/*Кастомизация скролла, скролл ЕСТЬ, но он НЕВИДИМ !!!*/
+body::-webkit-scrollbar {
+    width: 0;
 }
 
 .content {
@@ -61,15 +67,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
-    margin: 15px auto 20px;
     gap: 25px;
+    margin: 15px auto 20px;
 }
 
 .navLinkWrapper {
-    width: 300px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 25px;
 }
@@ -86,6 +90,7 @@ a:hover {
 }
 
 .navLinkWrapper a:active {
+    /*color: red;*/
     color: rgba(255, 0, 255, 1);
 }
 
@@ -103,7 +108,7 @@ a:hover {
     height: 30px;
     border: 2px solid #A4E800;
     border-radius: 10px;
-    background: #243803;
+    background-color: #243803;
     color: #A4E800;
     display: flex;
     justify-content: center;
@@ -124,4 +129,8 @@ a:hover {
 
 .juniorPlus {
     height: 100vh;
+}
+
+.homeworks {
+    text-align: center;
 }

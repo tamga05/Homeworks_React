@@ -17,6 +17,12 @@ function Error404() {
             <NavLink
                 to="/pre-junior"
                 className={({isActive}) => (isActive ? s.active : s.inactive)}
+
+                // Ссылка на пустую страницу тоже отлично работает
+                // target={'_blank'}
+
+                // Дополнительное свойство для Безопасности при переходе на неизвестные страницы
+                // rel={'noreferrer nofollow noopener'}
             >
                 Go to main page...
             </NavLink>

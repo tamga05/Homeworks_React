@@ -21,6 +21,7 @@ function Header() {
                     <NavLink
                         to="/pre-junior"
                         className={({isActive}) => (isActive ? s.active : s.inactive)}
+                        // target={'_blank'}
                     >
                         pre-junior
                     </NavLink>
@@ -37,6 +38,15 @@ function Header() {
                         className={({isActive}) => (isActive ? s.active : s.inactive)}
                     >
                         junior+
+                    </NavLink>
+
+                    {/*=====================================================================================*/}
+
+                    <NavLink
+                        to="/error404"
+                        className={({isActive}) => (isActive ? s.active : s.inactive)}
+                    >
+                        error404
                     </NavLink>
 
                 </div>
